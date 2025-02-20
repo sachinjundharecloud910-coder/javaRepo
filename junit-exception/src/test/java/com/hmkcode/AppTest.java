@@ -25,10 +25,10 @@ public class AppTest
 	       str.toUpperCase();
 	  }
 	 
-	 // ( 2 ) Test by tyr/catch (test exception message)
+	 // ( 2 ) Test by try/catch (test exception message)
 	 @Test
 	 public void testExceptionMessage(){
-		 try{
+		 try {
 			 new LinkedList<Object>().get(0);
 
 			 //if no exception thrown the test will fail with the below message.
@@ -42,7 +42,7 @@ public class AppTest
 
 	 }
 	 
-	 //( 3 ) Test by @Rule & ExpectedException.expect() | ExpectedException.expectMessage()
+	 // ( 3 ) Test by @Rule & ExpectedException.expect() | ExpectedException.expectMessage()
 	  @Rule
 	  public ExpectedException thrown = ExpectedException.none();
 
